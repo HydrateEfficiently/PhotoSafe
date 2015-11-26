@@ -1,15 +1,16 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using PhotoSafe.Data;
 using PhotoSafe.Data.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PhotoSafe.Data.Initializers
+namespace PhotoSafe.Web
 {
-    public class DebugInitializer
+    public class DebugInitializer : IDataInitializer
     {
         private readonly IServiceProvider _serviceProvider;
         private readonly IServiceScopeFactory _scopeFactory;

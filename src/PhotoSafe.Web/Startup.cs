@@ -12,8 +12,6 @@ using Microsoft.Extensions.Logging;
 using PhotoSafe.Data;
 using PhotoSafe.Data.Identity;
 using PhotoSafe.Web.Services;
-using PhotoSafe.Data.Initializers;
-using PhotoSafe.Data.Utilities;
 
 namespace PhotoSafe.Web
 {
@@ -41,26 +39,18 @@ namespace PhotoSafe.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddEntityFramework()
-                .AddSqlServer()
-                .AddDbContext<ApplicationDbContext>(options =>
-                    options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
-
-            services.AddIdentity<ApplicationUser, ApplicationRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();
-            services.AddTransient<DebugInitializer>();
+            services.AddPhotoSafeData(Configuration["Data:DefaultConnection:ConnectionString"]);
 
             services.AddMvc();
 
             // Add application services.
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
+            services.AddTransient<IDataInitializer, DebugInitializer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env,
-            DebugInitializer dataInitializer, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, IDataInitializer dataInitializer, ILoggerFactory loggerFactory)
         {
             dataInitializer.Run();
 
