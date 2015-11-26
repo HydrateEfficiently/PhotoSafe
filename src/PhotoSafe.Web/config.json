@@ -1,0 +1,15 @@
+﻿{
+  "Data": {
+    "DefaultConnection": {
+      "ConnectionString": "Server=(localdb)\\mssqllocaldb;Database=aspnet5-PhotoSafe-1b8690e7-5ca8-4ddf-aad9-6f548aa4fb3c;Trusted_Connection=True;MultipleActiveResultSets=true"
+    }
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Verbose",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  }
+}
