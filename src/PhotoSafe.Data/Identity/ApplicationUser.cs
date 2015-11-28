@@ -8,5 +8,8 @@ namespace PhotoSafe.Data.Identity
 {
     public class ApplicationUser : IdentityUser
     {
+        public ICollection<Safe> SafesCreated { get; set; }
+
+        public ICollection<Safe> SafesAdministrated { get; set; }
     }
 }

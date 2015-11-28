@@ -1,0 +1,20 @@
+﻿@model IEnumerable<Safe>
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Your Safes</h1>
+
+        <h3>Safes you manage</h3>
+        <ul>
+            @foreach (var s in Model)
+            {
+                <li><a asp-controller="Safe" asp-action="Details" asp-route-id="@s.Id">@s.SubjectName</a></li>
+            }
+        </ul>
+
+        <h3>Safes you contribute to</h3>
+
+
+        <h3>Safes you follow</h3>
+    </div>
+</div>

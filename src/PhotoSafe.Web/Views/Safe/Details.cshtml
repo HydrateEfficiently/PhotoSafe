@@ -1,0 +1,18 @@
+﻿@model Safe
+@inject IIdentityResolver identityResolver
+
+<p>Created by: @Model.CreatedBy.UserName</p>
+
+<p>Managed by: @Model.Administrator.UserName</p>
+
+<p>Subject name: @Model.SubjectName</p>
+
+
+@if (identityResolver.GetCurrentUserId() == Model.Administrator.Id)
+{
+    <div>You can edit some stuff!</div>
+}
+
+@section scripts {
+
+}

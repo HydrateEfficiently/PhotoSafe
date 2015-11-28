@@ -6,14 +6,30 @@ namespace PhotoSafe.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
+        public DbSet<Safe> Safes { get; set; }
+
+        public DbSet<SafeContributor> SafeContributors { get; set; }
+
+        public DbSet<SafeFollower> SafeFollowers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
 
-            // Customize the ASP.NET Identity model and override the defaults if needed.
-            // For example, you can rename the ASP.NET Identity table names and more.
-            // Add your customizations after calling base.OnModelCreating(builder);
+            modelBuilder.Entity<Safe>(b =>
+            {
+                b.HasAnnotation("Relational:TableName", "Safes");
+            });
+
+            //modelBuilder.Entity<Safe>(b =>
+            //{
+            //    b.HasAnnotation("Relational:TableName", "SafeContributors");
+            //});
+
+            //modelBuilder.Entity<Safe>(b =>
+            //{
+            //    b.HasAnnotation("Relational:TableName", "SafeFollowers");
+            //});
         }
     }
 }

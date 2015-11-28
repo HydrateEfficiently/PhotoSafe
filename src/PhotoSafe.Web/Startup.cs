@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using PhotoSafe.Data;
 using PhotoSafe.Data.Identity;
 using PhotoSafe.Web.Services;
+using PhotoSafe.Services;
 
 namespace PhotoSafe.Web
 {
@@ -39,7 +40,29 @@ namespace PhotoSafe.Web
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddPhotoSafeData(Configuration["Data:DefaultConnection:ConnectionString"]);
+            services.ConfigureRouting(routeOptions =>
+            {
+                routeOptions.LowercaseUrls = true;
+            });
+
+            services.AddEntityFramework()
+                .AddSqlServer()
+                .AddDbContext<ApplicationDbContext>(options =>
+                    options.UseSqlServer(Configuration["Data:DefaultConnection:ConnectionString"]));
+
+            // Add Identity services to the services container.
+            services.AddIdentity<ApplicationUser, ApplicationRole>(
+                options =>
+                {
+                    options.SignIn.RequireConfirmedEmail = false;
+                    options.Password.RequireDigit = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireNonLetterOrDigit = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequiredLength = 6;
+                })
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
 
             services.AddMvc();
 
@@ -47,6 +70,9 @@ namespace PhotoSafe.Web
             services.AddTransient<IEmailSender, AuthMessageSender>();
             services.AddTransient<ISmsSender, AuthMessageSender>();
             services.AddTransient<IDataInitializer, DebugInitializer>();
+            services.AddTransient<IIdentityResolver, IdentityResolver>();
+
+            services.AddTransient<ISafeService, SafeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

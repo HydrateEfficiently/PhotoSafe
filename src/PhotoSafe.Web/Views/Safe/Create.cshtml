@@ -1,0 +1,25 @@
+﻿@model SafeViewModel
+
+<div class="row">
+    <div class="col-md-8">
+        <h1>Create Safe</h1>
+
+        <form asp-action="Create" method="post" class="form-horizontal clearfix" role="form">
+            <div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="SubjectName" class="col-md-2 control-label"></label>
+                <div class="col-md-10">
+                    <input asp-for="SubjectName" class="form-control" />
+                    <span asp-validation-for="SubjectName" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <button type="submit" name="publish" value="false" class="btn btn-blue">Save</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
