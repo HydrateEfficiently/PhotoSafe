@@ -13,16 +13,18 @@ namespace PhotoSafe.Data
 
         [ForeignKey("CreatedById")]
         [InverseProperty("SafesCreated")]
-        public ApplicationUser CreatedBy { get; set; }
+        public virtual ApplicationUser CreatedBy { get; set; }
 
         public string AdministratorId { get; set; }
 
         [ForeignKey("AdministratorId")]
         [InverseProperty("SafesAdministrated")]
-        public ApplicationUser Administrator { get; set; }
+        public virtual ApplicationUser Administrator { get; set; }
 
         [Required]
         public string SubjectName { get; set; }
+
+        public ICollection<Deposit> Deposits { get; set; }
 
         //public IEnumerable<SafeContributor> Contributors { get; set; }
 

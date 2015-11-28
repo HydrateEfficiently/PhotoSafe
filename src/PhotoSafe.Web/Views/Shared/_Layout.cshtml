@@ -48,6 +48,8 @@
         <environment names="Development">
             <script src="~/lib/jquery/dist/jquery.js"></script>
             <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+            <script src="~/lib/angular/angular.js" asp-append-version="true"></script>
+            <script src="~/lib/angular-route/angular-route.js" asp-append-version="true"></script>
             <script src="~/js/site.js" asp-append-version="true"></script>
         </environment>
         <environment names="Staging,Production">
@@ -59,8 +61,12 @@
                     asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
                     asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
             </script>
+            <script src="~/lib/angular/angular.min.js" asp-append-version="true"></script>
+            <script src="~/lib/angular-route/angular-route.min.js" asp-append-version="true"></script>
             <script src="~/js/site.min.js" asp-append-version="true"></script>
         </environment>
+
+        
 
         @RenderSection("scripts", required: false)
     </body>

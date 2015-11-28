@@ -8,9 +8,7 @@ namespace PhotoSafe.Data
     {
         public DbSet<Safe> Safes { get; set; }
 
-        public DbSet<SafeContributor> SafeContributors { get; set; }
-
-        public DbSet<SafeFollower> SafeFollowers { get; set; }
+        public DbSet<Deposit> Deposits { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -19,6 +17,11 @@ namespace PhotoSafe.Data
             modelBuilder.Entity<Safe>(b =>
             {
                 b.HasAnnotation("Relational:TableName", "Safes");
+            });
+
+            modelBuilder.Entity<Deposit>(b =>
+            {
+                b.HasAnnotation("Relational:TableName", "Deposits");
             });
 
             //modelBuilder.Entity<Safe>(b =>
