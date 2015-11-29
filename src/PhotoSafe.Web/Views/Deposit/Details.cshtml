@@ -1,0 +1,14 @@
+﻿@model DepositViewModel
+
+<div class="row">
+    <div class="col-md-12">@Model.Caption</div>
+
+    <div>
+        @foreach (var imageUrl in Model.ImageUrls)
+        {
+            <div class="col-md-4">
+                <img src="@imageUrl" class="img-responsive" />
+            </div>
+        }
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNet.Mvc;
 using PhotoSafe.Services;
-using PhotoSafe.Web.ViewModels.Safe;
+using PhotoSafe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -38,9 +38,7 @@ namespace PhotoSafe.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                Mapper.CreateMap<SafeViewModel, NewSafeRequest>();
-                var request = Mapper.Map<SafeViewModel, NewSafeRequest>(model);
-                await _safeService.CreateSafe(request);
+                await _safeService.CreateSafe(model);
                 return RedirectToAction(nameof(Index));
             }
             return View(model);

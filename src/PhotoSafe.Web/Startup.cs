@@ -33,6 +33,7 @@ namespace PhotoSafe.Web
 
             builder.AddEnvironmentVariables();
             Configuration = builder.Build();
+            Configuration["WebRootPath"] = env.WebRootPath;
         }
 
         public IConfigurationRoot Configuration { get; set; }
@@ -72,7 +73,10 @@ namespace PhotoSafe.Web
             services.AddTransient<IDataInitializer, DebugInitializer>();
             services.AddTransient<IIdentityResolver, IdentityResolver>();
 
+            // Add PhotoData.Services
             services.AddTransient<ISafeService, SafeService>();
+            services.AddTransient<IDepositService, DepositService>();
+            services.AddInstance<IPhotoFileService>(new LocalPhotoFileService(Configuration["WebRootPath"], "\\resources\\photos"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

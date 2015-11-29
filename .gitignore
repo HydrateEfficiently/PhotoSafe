@@ -232,3 +232,5 @@ $RECYCLE.BIN/
 
 # ~~Custom~~
 src/PhotoSafe.Web/wwwroot/lib/
+src/PhotoSafe.Web/wwwroot/resources/photos/
+project.lock.json

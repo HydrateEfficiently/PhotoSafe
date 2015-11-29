@@ -11,11 +11,7 @@
 @if (identityResolver.GetCurrentUserId() == Model.Administrator.Id)
 {
     <div>
-        <a asp-controller="Safe" asp-action="CreateDeposit" asp-route-id="@Model.Id">Deposit</a>
+        <a asp-controller="Deposit" asp-action="Create" asp-route-safeId="@Model.Id">Deposit</a>
     </div>
  
-}
-
-@section scripts {
-    <script src="~/js/safe/safeModule.js"></script>
 }

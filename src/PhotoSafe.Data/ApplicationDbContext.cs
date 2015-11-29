@@ -10,6 +10,10 @@ namespace PhotoSafe.Data
 
         public DbSet<Deposit> Deposits { get; set; }
 
+        public DbSet<Photo> Photos { get; set; }
+
+        public DbSet<ImageUpload> ImageUploads { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -22,6 +26,16 @@ namespace PhotoSafe.Data
             modelBuilder.Entity<Deposit>(b =>
             {
                 b.HasAnnotation("Relational:TableName", "Deposits");
+            });
+
+            modelBuilder.Entity<Photo>(b =>
+            {
+                b.HasAnnotation("Relational:TableName", "Photos");
+            });
+
+            modelBuilder.Entity<ImageUpload>(b =>
+            {
+                b.HasAnnotation("Relational:TableName", "ImageUploads");
             });
 
             //modelBuilder.Entity<Safe>(b =>

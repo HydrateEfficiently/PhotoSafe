@@ -19,9 +19,5 @@ namespace PhotoSafe.Data
         [Required]
         [Range(0, long.MaxValue)]
         public long Length { get; set; }
-
-        [Required]
-        [MinLength(1)]
-        public string Name { get; set; }
     }
 }

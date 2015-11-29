@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNet.Mvc;
 using PhotoSafe.Services;
-using PhotoSafe.Web.ViewModels.Safe;
+using PhotoSafe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,15 +11,26 @@ namespace PhotoSafe.Web.Controllers
     [Route("safe/deposit")]
     public class DepositController : Controller
     {
+        private readonly ISafeService _safeService;
+        private readonly IDepositService _depositService;
 
-        private ISafeService _safeService;
-
-        public DepositController(ISafeService safeService)
+        public DepositController(
+            ISafeService safeService,
+            IDepositService depositService)
         {
             _safeService = safeService;
+            _depositService = depositService;
         }
 
-        [Route("{safeId}/create")]
+        [Route("{depositId:int}")]
+        [HttpGet]
+        public async Task<IActionResult> Details(int depositId)
+        {
+            var deposit = await _depositService.Get(depositId);
+            return View(deposit);
+        }
+
+        [Route("{safeId:int}/create")]
         [HttpGet]
         public IActionResult Create(int safeId)
         {
@@ -28,11 +39,17 @@ namespace PhotoSafe.Web.Controllers
             return View();
         }
 
-        [Route("create")]
+        [Route("{safeId}/create")]
         [HttpPost]
-        public IActionResult Create(DepositViewModel model)
+        public async Task<IActionResult> Create(CreateDepositViewModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                int depositId = await _depositService.Create(model);
+                return RedirectToAction(nameof(Details), new { depositId = depositId });
+            }
+
+            return View(model);
         }
     }
 }

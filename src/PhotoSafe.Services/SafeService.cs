@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using PhotoSafe.Data;
 using Microsoft.Extensions.Logging;
 using Microsoft.Data.Entity;
+using PhotoSafe.ViewModels;
 
 namespace PhotoSafe.Services
 {
@@ -13,7 +14,6 @@ namespace PhotoSafe.Services
         private readonly ApplicationDbContext _dbContext;
         private readonly IIdentityResolver _identityResolver;
         private readonly ILogger<SafeService> _logger;
-
 
         public SafeService(
             ApplicationDbContext dbContext,
@@ -25,12 +25,12 @@ namespace PhotoSafe.Services
             _logger = logger;
         }
 
-        public async Task CreateSafe(NewSafeRequest safeRequest)
+        public async Task CreateSafe(SafeViewModel viewModel)
         {
             string userId = _identityResolver.GetCurrentUserId();
             var safe = new Safe()
             {
-                SubjectName = safeRequest.SubjectName,
+                SubjectName = viewModel.SubjectName,
                 AdministratorId = userId,
                 CreatedById = userId
             };

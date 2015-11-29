@@ -15,7 +15,9 @@
     "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-    "PhotoSafe.Data": "1.0.0-*"
+    "PhotoSafe.Data": "1.0.0-*",
+    "PhotoSafe.ViewModels": "1.0.0-*",
+    "PhotoSafe.Utility": "1.0.0-*"
   },
 
   "commands": {

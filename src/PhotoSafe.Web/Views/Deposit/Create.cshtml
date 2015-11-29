@@ -1,0 +1,31 @@
+﻿@model CreateDepositViewModel
+
+<div>
+    <form asp-controller="Deposit" asp-action="Create" method="post" class="form-horizontal clearfix" enctype="multipart/form-data">
+        <div asp-validation-summary="ValidationSummary.All" class="text-danger"></div>
+
+        <div class="form-group">
+            <label asp-for="Caption" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Caption" class="form-control" />
+                <span asp-validation-for="Caption" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="PhotoFormFiles" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="PhotoFormFiles" class="form-control" />
+                <span asp-validation-for="PhotoFormFiles" class="text-danger"></span>
+            </div>
+        </div>
+
+        <input type="hidden" value="@ViewData["safeId"]" />
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <button type="submit" name="publish" value="false" class="btn btn-blue">Save</button>
+            </div>
+        </div>
+    </form>
+</div>

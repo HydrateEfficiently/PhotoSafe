@@ -1,9 +1,5 @@
-{
-  "userSecretsId": "aspnet5-PhotoSafe-1b8690e7-5ca8-4ddf-aad9-6f548aa4fb3c",
+﻿{
   "version": "1.0.0-*",
-  "compilationOptions": {
-    "emitEntryPoint": true
-  },
 
   "dependencies": {
     "AutoMapper": "4.1.1",
@@ -24,16 +20,11 @@
     "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
     "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-    "PhotoSafe.Data": "1.0.0-*",
-    "PhotoSafe.Services": "1.0.0-*",
-    "PhotoSafe.ViewModels": "1.0.0-*"
+    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel",
-    "ef": "EntityFramework.Commands"
+    "web": "Microsoft.AspNet.Server.Kestrel"
   },
 
   "frameworks": {
@@ -48,8 +39,5 @@
   "publishExclude": [
     "**.user",
     "**.vspscc"
-  ],
-  "scripts": {
-    "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
-  }
+  ]
 }

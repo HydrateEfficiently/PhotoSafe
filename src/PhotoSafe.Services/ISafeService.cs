@@ -1,4 +1,5 @@
 ﻿using PhotoSafe.Data;
+using PhotoSafe.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,6 @@ namespace PhotoSafe.Services
 
         Safe GetSafe(int id);
 
-        Task CreateSafe(NewSafeRequest safeRequest);
+        Task CreateSafe(SafeViewModel safeViewModel);
     }
 }

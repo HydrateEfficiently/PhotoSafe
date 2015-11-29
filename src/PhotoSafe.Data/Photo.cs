@@ -10,12 +10,17 @@ namespace PhotoSafe.Data
     {
         public int Id { get; set; }
 
-        public string Captions { get; set; }
-
         public int DepositId { get; set; }
 
         [ForeignKey("DepositId")]
         [InverseProperty("Photos")]
-        public Deposit Safe { get; set; }
+        public virtual Deposit Deposit { get; set; }
+
+        public string ImageUploadFileName { get; set; }
+
+        public int ImageUploadId { get; set; }
+
+        [ForeignKey("ImageUploadId")]
+        public virtual ImageUpload ImageUpload { get; set; }
     }
 }

@@ -1877,7 +1877,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -3799,7 +3851,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -6759,7 +6863,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -8861,7 +9017,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNX,Version=v4.5.1",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -10786,7 +10994,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -14045,7 +14305,59 @@
           "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
           "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-          "PhotoSafe.Data": "1.0.0"
+          "PhotoSafe.Data": "1.0.0",
+          "PhotoSafe.Utility": "1.0.0",
+          "PhotoSafe.ViewModels": "1.0.0"
+        }
+      },
+      "PhotoSafe.Utility/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
+        }
+      },
+      "PhotoSafe.ViewModels/1.0.0": {
+        "type": "project",
+        "framework": "DNXCore,Version=v5.0",
+        "dependencies": {
+          "AutoMapper": "4.1.1",
+          "EntityFramework.Commands": "7.0.0-rc1-final",
+          "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Authentication.Cookies": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
+          "Microsoft.AspNet.Identity.EntityFramework": "3.0.0-rc1-final",
+          "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+          "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+          "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+          "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
+          "Microsoft.Extensions.CodeGenerators.Mvc": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.FileProviderExtensions": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.Json": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Configuration.UserSecrets": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
+          "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final"
         }
       },
       "Remotion.Linq/2.0.1": {
@@ -15612,6 +15924,14 @@
     "PhotoSafe.Services/1.0.0": {
       "type": "project",
       "path": "../PhotoSafe.Services/project.json"
+    },
+    "PhotoSafe.Utility/1.0.0": {
+      "type": "project",
+      "path": "../PhotoSafe.Utility/project.json"
+    },
+    "PhotoSafe.ViewModels/1.0.0": {
+      "type": "project",
+      "path": "../PhotoSafe.ViewModels/project.json"
     },
     "AutoMapper/4.1.1": {
       "type": "package",
@@ -21442,7 +21762,8 @@
       "Microsoft.Extensions.Logging.Debug >= 1.0.0-rc1-final",
       "Microsoft.VisualStudio.Web.BrowserLink.Loader >= 14.0.0-rc1-final",
       "PhotoSafe.Data >= 1.0.0-*",
-      "PhotoSafe.Services >= 1.0.0-*"
+      "PhotoSafe.Services >= 1.0.0-*",
+      "PhotoSafe.ViewModels >= 1.0.0-*"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

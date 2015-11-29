@@ -10,13 +10,15 @@ namespace PhotoSafe.Data
     {
         public int Id { get; set; }
 
-        public string Captions { get; set; }
+        public string Caption { get; set; }
+
+        public DateTime CreatedDate { get; set; }
 
         public int SafeId { get; set; }
 
         [ForeignKey("SafeId")]
         [InverseProperty("Deposits")]
-        public Safe Safe { get; set; }
+        public virtual Safe Safe { get; set; }
 
         public ICollection<Photo> Photos { get; set; }
     }
